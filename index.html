@@ -4,63 +4,112 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LicoLand — Open infrastructure for governed agents</title>
-    <meta name="description" content="LicoLand develops open infrastructure for governed agents, human–agent collaboration, and federated communication.">
+    <meta name="description" content="LicoLand develops open infrastructure for governed agents, private human–agent collaboration, and federated communication.">
     <link rel="canonical" href="https://lico.land/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lico.land/">
+    <meta property="og:title" content="LicoLand — Open infrastructure for governed agents">
+    <meta property="og:description" content="LicoLand develops open infrastructure for governed agents, private human–agent collaboration, and federated communication.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <div class="shell">
-      <nav aria-label="Primary navigation">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-head">
+      <nav class="nav" aria-label="Primary navigation">
         <a class="wordmark" href="/">LicoLand</a>
         <div class="nav-links">
-          <a href="https://licoup.com/">LicoUp</a>
-          <a href="https://licoarc.com/">LicoArc</a>
-          <a href="https://github.com/LicoLand">Source</a>
+          <a href="https://licoup.com/">LicoUp<span class="arrow" aria-hidden="true">↗</span></a>
+          <a href="https://licoarc.com/">LicoArc<span class="arrow" aria-hidden="true">↗</span></a>
+          <a href="https://github.com/LicoLand">GitHub<span class="arrow" aria-hidden="true">↗</span></a>
         </div>
       </nav>
-      <main>
+    </header>
+    <main id="main">
+      <section class="hero">
         <p class="eyebrow">Organization</p>
         <h1>Open systems for accountable collaboration.</h1>
         <p class="lede">
-          LicoLand develops and maintains infrastructure for agent behavior
-          governance, private human–agent work, and federated communication.
-          Each project has one clear responsibility and an open implementation.
+          LicoLand develops open infrastructure for governed agents, private
+          human–agent collaboration, and federated communication. Each project
+          keeps one clear responsibility and an open implementation.
         </p>
         <div class="actions">
           <a class="button" href="https://github.com/LicoLand">Browse the organization</a>
-          <a class="button secondary" href="https://licoland.com/">Official services</a>
+          <a class="textlink" href="https://licoland.com/">Official services<span class="arrow" aria-hidden="true">↗</span></a>
         </div>
+      </section>
 
-        <section class="section" aria-labelledby="projects-title">
-          <h2 id="projects-title">Projects with distinct boundaries.</h2>
-          <p class="section-intro">
-            Governance, trusted endpoints, federation rules, and relay
-            infrastructure remain separate so each can be inspected and
-            deployed on its own terms.
-          </p>
-          <div class="grid">
-            <article class="card">
-              <h3>LicoUp</h3>
-              <p>A human–agent client designed for offline work and end-to-end protected federation.</p>
-              <a href="https://licoup.com/">View LicoUp</a>
-            </article>
-            <article class="card">
-              <h3>Fabrigent</h3>
-              <p>The protocol and policy authority for interoperable agent federation.</p>
-              <a href="https://github.com/LicoLand/Fabrigent">View source</a>
-            </article>
-            <article class="card wide">
-              <h3>BadTower</h3>
-              <p>An intentionally untrusted relay node. Endpoints remain responsible for identity, encryption, and approval.</p>
-              <a href="https://github.com/LicoLand/BadTower">View source</a>
-            </article>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <span>LicoLand</span>
-        <span>Public organization information only.</span>
-      </footer>
-    </div>
+      <section class="section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Three projects, one stack.</h2>
+        <p class="section-intro">
+          A secure endpoint client, a neutral federation protocol, and an
+          untrusted communication station — each can be inspected, deployed,
+          and extended on its own.
+        </p>
+        <ol class="project-list">
+          <li>
+            <a class="project" href="https://licoup.com/">
+              <span class="index">01</span>
+              <span class="project-body">
+                <span class="layer">Client</span>
+                <span class="name">LicoUp</span>
+                <span class="role">An open-source, local-first human–agent conversation client in which people and visible agents collaborate under user-controlled identity, approval, and disclosure.</span>
+              </span>
+              <span class="go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://licoarc.com/">
+              <span class="index">02</span>
+              <span class="project-body">
+                <span class="layer">Protocol</span>
+                <span class="name">LicoArc</span>
+                <span class="role">The implementation-neutral protocol layer for secure endpoint exchange, station-facing delivery, and federation governance.</span>
+              </span>
+              <span class="go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://github.com/LicoLand/BadTower">
+              <span class="index">03</span>
+              <span class="project-body">
+                <span class="layer">Station</span>
+                <span class="name">BadTower</span>
+                <span class="role">A pure, protocol-neutral communication station that remains an untrusted transport by design.</span>
+              </span>
+              <span class="go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="boundaries-title">
+        <h2 id="boundaries-title">Trust boundaries.</h2>
+        <ol class="boundary-grid">
+          <li>
+            <span class="index">01</span>
+            <p>Identity, approval, key custody, encryption, and decryption stay on user-controlled endpoints.</p>
+          </li>
+          <li>
+            <span class="index">02</span>
+            <p>A station never becomes a source of plaintext, client keys, or local approval authority.</p>
+          </li>
+          <li>
+            <span class="index">03</span>
+            <p>LicoUp and BadTower consume versioned Lico Arc protocol artifacts instead of importing sibling source.</p>
+          </li>
+          <li>
+            <span class="index">04</span>
+            <p>Official hosted services are deployments of public project contracts, not alternate product authorities.</p>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="site-foot">
+      <span class="wordmark">LicoLand</span>
+      <span>Public organization information only.</span>
+    </footer>
   </body>
 </html>
