@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LicoLand — Open systems for accountable collaboration between people and agents</title>
+  <meta name="description" content="LicoLand builds open systems for accountable collaboration between people and agents: LicoUp, the endpoint client; LicoArc, the protocol; and BadTower, the untrusted station.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lico.land/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LicoLand">
+  <meta property="og:url" content="https://lico.land/">
+  <meta property="og:title" content="LicoLand — Open systems for accountable collaboration between people and agents">
+  <meta property="og:description" content="Three open projects, one stack: LicoUp, the endpoint client; LicoArc, the protocol; BadTower, the untrusted station.">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0a0820">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@graph": [
+    {"@type": "Organization", "@id": "https://lico.land/#organization", "name": "LicoLand", "url": "https://lico.land/", "logo": "https://lico.land/favicon.svg", "sameAs": ["https://github.com/LicoLand"], "description": "Open systems for accountable collaboration between people and agents."},
+    {"@type": "WebSite", "@id": "https://lico.land/#website", "url": "https://lico.land/", "name": "LicoLand", "publisher": {"@id": "https://lico.land/#organization"}}
+  ]}
+  </script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="star-fill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2d6ff"/><stop offset=".5" stop-color="#bba5fb"/><stop offset="1" stop-color="#9a80ee"/></linearGradient>
+    <symbol id="star" viewBox="0 0 64 64"><path d="M32 6l7.400 15.800 17.300 2.100-12.800 11.900 3.300 17.100L32 44.500l-15.200 8.400 3.300-17.100L7.300 23.900l17.300-2.100Z" fill="url(#star-fill)" stroke="#8f78e0" stroke-width="1.8" stroke-linejoin="round"/><ellipse cx="25" cy="21" rx="5.600" ry="3" fill="#fff" opacity=".75" transform="rotate(-24 25 21)"/></symbol>
+    <symbol id="go" viewBox="0 0 20 20"><path d="M5.500 14.500l9-9M7.500 5.500h7v7" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <a class="brand" href="/" aria-label="LicoLand home" data-clear="14"><svg aria-hidden="true"><use href="#star"/></svg><span>LicoLand</span></a>
+  <nav aria-label="Projects">
+    <a href="https://licoup.com/">LicoUp</a>
+    <a href="https://licoarc.com/">LicoArc</a>
+    <a href="https://badtower.com/">BadTower</a>
+    <a href="https://github.com/LicoLand">GitHub</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-main">
+      <h1 class="mark">LicoLand</h1>
+      <p class="lede">Open systems for accountable collaboration between people and agents.</p>
+    </div>
+    <ul class="trio">
+      <li><a href="https://licoup.com/"><strong>LicoUp</strong><span>People. Agents. One conversation.</span></a></li>
+      <li><a href="https://licoarc.com/"><strong>LicoArc</strong><span>Trust stays at the edge.</span></a></li>
+      <li><a href="https://badtower.com/"><strong>BadTower</strong><span>It carries. It never reads.</span></a></li>
+    </ul>
+  </section>
+
+  <section class="stack" aria-labelledby="stack-title">
+    <h2 id="stack-title">Three projects, one stack.</h2>
+    <div class="live" data-clear="26">
+      <form class="say" id="say" autocomplete="off">
+        <input id="say-input" type="text" maxlength="28" placeholder="Write something" aria-label="A message to send">
+        <button type="submit">Send</button>
+      </form>
+      <div class="wire">
+        <canvas id="wire" aria-hidden="true"></canvas>
+        <p class="at at-a">LicoUp</p>
+        <p class="at at-b">LicoArc</p>
+        <p class="at at-c">BadTower <output id="seen">1 unit, 41 bytes</output></p>
+        <p class="at at-d">LicoArc</p>
+        <p class="at at-e">LicoUp</p>
+      </div>
+    </div>
+    <ul class="roles">
+      <li><a href="https://licoup.com/"><strong>LicoUp</strong><em>Endpoint</em><span>Identity, approval and keys stay on the device that owns them.</span><svg aria-hidden="true"><use href="#go"/></svg></a></li>
+      <li><a href="https://licoarc.com/"><strong>LicoArc</strong><em>Protocol</em><span>One shared definition of the protected record that crosses the line.</span><svg aria-hidden="true"><use href="#go"/></svg></a></li>
+      <li><a href="https://badtower.com/"><strong>BadTower</strong><em>Station</em><span>Carries the record between endpoints and can read none of it.</span><svg aria-hidden="true"><use href="#go"/></svg></a></li>
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="source-title">
+    <h2 id="source-title">Read the source.</h2>
+    <ul class="rows">
+      <li><a href="https://github.com/LicoLand/LicoUp"><strong>LicoUp</strong><span>The desktop client: open-source agent collaboration focused on cross-device connectivity and privacy.</span><em>AGPL-3.0</em><svg aria-hidden="true"><use href="#go"/></svg></a></li>
+      <li><a href="https://github.com/LicoLand/LicoUp-CLI"><strong>LicoUp-CLI</strong><span>The standalone command-line client and the local engine behind the licoup program.</span><em>AGPL-3.0</em><svg aria-hidden="true"><use href="#go"/></svg></a></li>
+      <li><a href="https://github.com/LicoLand/LicoArc"><strong>LicoArc</strong><span>The implementation-neutral protocol definition: schemas, wire representations, lifecycle rules and conformance corpora.</span><em>Apache-2.0</em><svg aria-hidden="true"><use href="#go"/></svg></a></li>
+      <li><a href="https://github.com/LicoLand/LicoArc-Rust"><strong>LicoArc-Rust</strong><span>An independent safe-Rust implementation of the current Candidate definition.</span><em>Apache-2.0</em><svg aria-hidden="true"><use href="#go"/></svg></a></li>
+      <li><a href="https://github.com/LicoLand/BadTower"><strong>BadTower</strong><span>The protocol-neutral communication station.</span><em>AGPL-3.0</em><svg aria-hidden="true"><use href="#go"/></svg></a></li>
+    </ul>
+  </section>
+
+  <section class="bounds" aria-labelledby="bounds-title">
+    <h2 id="bounds-title">Trust boundaries.</h2>
+    <ul>
+      <li>Identity, approval, key custody, encryption, and decryption stay on user-controlled endpoints.</li>
+      <li>A station never becomes a source of plaintext, client keys, or local approval authority.</li>
+      <li>LicoUp and BadTower consume versioned Lico Arc protocol artifacts instead of importing sibling source.</li>
+      <li>Official hosted services are deployments of public project contracts, not alternate product authorities.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Public organization information only.</p>
+  <a href="https://github.com/LicoLand">Browse the organization</a>
+  <a href="https://licoland.com/">Official services</a>
+</footer>
+
+<canvas class="veil" id="veil" aria-hidden="true"></canvas>
+<div class="mode" role="group" aria-label="Page reading mode">
+  <span class="mode-hint">Click anywhere to read</span>
+  <button type="button" id="mode-cipher" aria-pressed="true">Cipher</button>
+  <button type="button" id="mode-plain" aria-pressed="false">Plain</button>
+</div>
+
+<script src="/tiles.js"></script>
+<script src="/cipher.js"></script>
+</body>
+</html>
